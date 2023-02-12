@@ -1,0 +1,931 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* ===================== Nav Mobile Media Query ============================ */
+@media screen and (min-width:320px) and (max-width:550px){
+    .section-nav{
+        padding: 10px 0px!important;
+        background-image: url(../Images/mobile-header.png);
+    }
+    
+}
+
+@media screen and (min-width:551px) and (max-width:767px){
+    .section-nav{
+        padding: 10px 0px!important;
+}
+    .nav-tongle span{
+        color: #0f2f44 !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .nav-bar{
+        display: none !important;
+    }
+    .mobile-nav{
+        display: block !important;
+    }
+
+    .nav-tongle span{
+        color: #0f2f44 !important;
+    }
+}
+@media screen and (min-width:992px) and (max-width:2000px){
+    .nav-bar{
+        display: block !important;
+    }
+    .mobile-nav{
+        display: none !important;
+    }
+}
+
+
+/* =========== Side Mobile Nav ================= */
+.mobile-nav{
+    z-index: 9999999;
+    width: 100%;;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    background-color: #ffc511;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow: hidden;
+    z-index: 99999999;
+    overflow-y: scroll;
+  }
+  
+  .sidenav ul{
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .closebtn{
+      text-decoration: none;
+      color: white;
+  }
+  
+  .closebtn:hover{
+      text-decoration: none;
+      color: #008000 !important;
+  }
+
+  
+  .sidenav ul li{
+      padding-left: 20px;
+  }
+  .sidenav ul li a{
+    /* margin: 8px 8px 40px 33px; */
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    line-height: 3;
+    border-bottom: 1px solid white;
+  }
+  
+  .sidenav ul li a:hover{
+      text-decoration: none;
+      color: #008000 !important;
+  }
+
+  #mobile-home a{
+    color: #008000 !important;
+    border-bottom: 1px solid #008000;
+    display: inline-block;
+  }
+  .side-nav-item i{
+    padding-right: 15px;
+  
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .logo-mobile{
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .logo-mobile img {
+    height: 40px;
+    width: 150px;
+  
+  }
+  
+  .nav-tongle span {
+    float: right;
+    color: #ffc511;
+    background-color: transparent;
+  }
+  
+  .nav-tongle{
+    display: inline-block;
+      float: right;
+  }
+  
+  .nav-tongle span:hover {
+    color: white;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 20px;
+    }
+  }
+
+ 
+
+  /* ==================Slider Media-query============ */
+
+  @media screen and (min-width:320px) and (max-width:500px){
+    .slider-pagi{
+        bottom: 0;
+    }
+    .slide__text{
+        height: 150px!important;
+    }
+    .slide__text-heading{
+        font-size: 22px;
+        line-height: 2;
+    }
+    .slide__text-link{
+        font-size: 18px;
+    }
+    
+  }
+
+  /* ======================= About Company ==================== */
+  @media screen and (min-width:320px) and (max-width:500px){
+  
+    .section-company {
+        padding: 30px 10px;
+    }
+
+    .company-title h4{
+        font-size: 25px;
+    }
+
+    .company-title h3{
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    
+    .section-company{
+        padding: 55px 50px;
+        background-image: url(../Images/background-tablet.jpg);
+        background-repeat: no-repeat;
+      }
+    
+      .company-title h4{
+        font-size: 30px;
+    }
+
+    .company-title h3{
+        font-size: 45px;
+    }
+
+    .company-text p{
+        font-size: 12px;
+    }
+
+    .owl-slider-box{
+        margin-top: 132px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+
+    .company-text p{
+        font-size: 16px;
+    }
+
+    .owl-slider-box{
+        margin-top: 132px;
+    }
+}
+/* ==================== Our Aim And Vission ================== */
+@media screen and (min-width:320px) and (max-width:450px){
+    
+    .cards{
+        padding: 40px;
+        height: 250px;
+    }
+
+    .inner-cards h1{
+        font-size: 40px;
+    }
+    .inner-cards p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+    
+    .section-aim-vission{
+        background-image: url(../Images/background-2-mobile.jpg) !important;
+    }
+    #second-card{
+        background-color: #ffc511!important;
+    }
+
+    #second-card h1{
+        color: #0f2f44 ;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    
+    .cards{
+     height: 300px;
+    }
+    .inner-cards h1{
+        font-size: 29px;
+    }
+
+    .inner-cards p{
+        font-size: 12px
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    
+    .footer-text {
+        font-size: 16px;
+    }
+    .inner-cards h1{
+        font-size: 43px;
+    }
+
+    .inner-cards p{
+        font-size: 17px
+    }
+}
+
+/* ======================== Choose Us Section ================= */
+
+@media screen and (min-width:320px) and (max-width:767px){
+    
+    .chooseus-title h1{
+        font-size: 28px;
+    }
+
+    .chooseus-text p {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+    .chooseus-title h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .chooseus-text p {
+        font-size: 14px;
+    }
+
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+
+    .chooseus-box{
+        width: 50% !important;
+    }
+
+    .chooseus-title h1{
+        font-size: 39px;
+    }
+
+    .chooseus-text p {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ====================== Footer ================ */
+@media screen and (min-width:320px) and (max-width:767px){
+
+    .footer-logo img{
+        width: 100px;
+    }
+
+    .footer-text p{
+        font-size: 16px;
+    }
+
+    .link-heading h3{
+        text-align: unset;
+        margin-left: 4px;
+    }
+
+    .footer-ul li{
+        margin-left: 4px;
+    }
+
+    .address{
+        float: none;
+    }
+
+    .address h3{
+        text-align: unset;
+    }
+
+    .address p{
+        margin-left: 4px;
+    }
+
+    .social-links-ul li {
+        margin-left: 23px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+    .link-heading h3{
+        text-align: unset;
+        font-size: 38px;
+    }
+
+    
+    .footer-text{
+        font-size: 14px;
+        line-height: 16px !important;
+    }
+
+    .footer-ul li{
+        margin-left: 0px;
+    }
+
+    .address h3{
+        text-align: unset;
+        font-size: 38px;
+        margin-left: 16px;                                                          
+    }
+
+    .address p{
+        margin-top: 28px;
+    }
+
+    .social-links-ul{
+        margin-left: 19px;
+    }
+
+    .social-links-ul li a {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+
+    .footer-ul li{
+        margin-left: 38px;
+    }
+}
+
+/* ===================== Product Page ============= */
+
+@media screen and (min-width:320px) and (max-width:575px){
+
+    .section-products{
+        padding:20px 0px 0px 0px;
+        background-image: none;
+        background-color: #ffc511;
+    }
+
+    .product-image img {
+        width: 50px;
+    }
+    
+    .product-heading {
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .product-company-name {
+        font-size: 14px;
+    }
+
+    .product-type {
+        font-size: 18px;
+    }
+
+    .product-customer-rating p {
+        font-size: 12px;
+        padding-bottom: 0
+    }
+
+    .product-customer-rating p {
+        font-size: 12px;
+    }
+    
+    .features {
+        padding: 0px 20px 0px 25px;
+    }
+
+    .feature-text-icon {
+        font-size: 20px;
+        padding-top: 25px;
+    }
+
+    .feature-text-content span {
+        font-size: 14px;
+    }
+
+    .buy-now {
+        font-size: 20px;
+    }
+
+    .buy-now-back {
+        font-size: 20px;
+    }
+    .image-flip{
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+    .section-products{
+        padding:20px 0px 0px 0px;
+        background-image: none;
+        background-color: #ffc511;
+    }
+
+    .product-image img {
+        width: 50px;
+    }
+    
+    .product-heading {
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .product-company-name {
+        font-size: 14px;
+    }
+
+    .product-type {
+        font-size: 18px;
+    }
+
+    .product-customer-rating p {
+        font-size: 12px;
+        padding-bottom: 0
+    }
+
+    .product-customer-rating p {
+        font-size: 12px;
+    }
+    
+    .features {
+        padding: 0px 20px 0px 25px;
+    }
+
+    .feature-text-icon {
+        font-size: 15px;
+        padding-top: 25px;
+    }
+
+    .feature-text-content p{
+        font-size: 9px;
+    }
+    .feature-text-content span {
+        font-size: 14px;
+    }
+
+    .buy-now {
+        font-size: 20px;
+        padding: 2px 80px;
+    }
+
+    .buy-now-back {
+        font-size: 20px;
+        padding: 2px 80px;
+    }
+    .image-flip{
+        padding: 20px 0px;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .section-products{
+        padding:20px 0px 0px 0px;
+        background-image: none;
+        background-color: #ffc511;
+    }
+
+    .product-image img {
+        width: 50px;
+    }
+    
+    .tagline {
+        font-size: 8px;
+    }
+
+    .product-heading {
+        margin-top: 0px;
+        margin-left: 15px;
+    }
+
+    .product-company-name {
+        font-size: 14px;
+    }
+
+    .product-type {
+        font-size: 18px;
+    }
+
+    .product-customer-rating p {
+        font-size: 8px;
+        padding-bottom: 0
+    }
+
+    .product-customer-rating p {
+        font-size: 8px;
+    }
+    
+    .features {
+        padding: 10px 20px 10px 20px;
+    }
+
+    .feature-text-content{
+        margin-left: 10px;
+    }
+
+    .feature-text-icon {
+        font-size: 15px;
+        padding-top: 25px;
+    }
+
+    .feature-text-content p{
+        font-size: 8px;
+    }
+    .feature-text-content span {
+        font-size: 10px;
+    }
+
+    .feature-check i {
+        margin: 20px 0px 0 16px;
+    }
+
+    .buy-now {
+        font-size: 20px;
+        padding: 2px 65px;
+    }
+
+    .buy-now-back {
+        font-size: 20px;
+        padding: 2px 65px;
+    }
+    .image-flip{
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+
+    
+    .feature-text-content{
+        margin-left: 10px;
+    }
+
+    .buy-now {
+        font-size: 20px;
+        padding: 2px 65px;
+    }
+
+    .buy-now-back {
+        font-size: 20px;
+        padding: 2px 65px;
+    }
+}
+
+
+/* =================== Contact- Page Media Query ============== */
+
+/* ============Contact And Map Section ============= */
+
+@media only screen and (min-width:320px) and (max-width:767px){
+    .section-contact-msg .container{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+
+  @media only screen and (min-width:768px) and (max-width:991px){
+   .maps{
+       width: 100%;
+       height: 614px;
+   }
+  }
+
+  /* =========== Section Contact Information ================== */
+  @media only screen and (min-width:320px) and (max-width:767px){
+    .section-information .container{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+  
+  @media only screen and (min-width:768px) and (max-width:991px){
+  
+    .info-card{
+        padding: 30px;
+    }
+
+    .info-card i{
+        font-size: 37px;
+    }
+
+    .info-card p{
+        font-size:16px;
+        margin-bottom: 7px;
+    }
+  }
+  
+  @media only screen and (min-width:992px) and (max-width:1200px){
+    .info-card{
+        padding: 30px;
+    }
+
+    .info-card i{
+        font-size: 37px;
+    }
+
+    .info-card p{
+        font-size:16px;
+        margin-bottom: 7px;
+    }
+  }
+
+
+  /* =============== Address Page Media Query ======== ================ */
+  @media only screen and (min-width:320px) and (max-width:767px){
+    
+    .cart-section{
+        padding: 35px 30px 15px 30px;
+        background-image: none !important;
+        background-color: #ffc511;
+    }
+
+    .accordionItemContent p{
+        font-size: 12px;
+    }
+    .invoice-label{
+        font-size: 14px;
+    }
+
+    .cart-summary{
+        margin: 20px 0px;
+        padding: 20px;
+    }
+
+    .card-block{
+        padding: 0;
+    }
+    .continue-btn{
+        margin-left: 0px;
+    }
+
+    .cancel{
+        padding: 5px 0px;
+    }
+  }
+
+  @media only screen and (min-width:768px) and (max-width:991px){
+    .cart-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .accordionItemContent label{
+        font-size: 14px;
+        color: #0f2f44;
+        padding-top: 12px;
+        font-weight: 600;
+    }
+
+    .continue-btn{
+        margin-left: 40px;
+    }
+  }
+
+
+  /* ================== Payment Page ============== */
+  @media only screen and (min-width:320px) and (max-width:450px){
+    .bank-details-title p{
+        font-size: 10px;
+    }
+
+    .bank-details-title{
+        width: 100%;
+    }
+
+    .bank-details-info{
+        width: 100%;
+    }
+
+    .bank-details-title p{
+        margin-top: 10px;
+        margin-bottom: 28px;
+        
+    }
+
+    .upload-button{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .upload-para{
+        margin-right: 0;
+    }
+
+    .btn-upload {
+        padding: 6px 7px;
+        margin-top: 10px;
+    }
+
+    .upload-button input[type=file] {
+        width: 0px;
+        opacity: 0;    
+        left: -106px;
+        top: 0px;
+        position: relative;
+    }
+
+    #cont-btn{
+        padding: 5px 0px !important;
+    }
+
+    #cont-btn a{
+        padding: 9px 9px !important;
+    }
+  }
+
+  
+  @media only screen and (min-width:451px) and (max-width:547px){
+    
+    .bank-details-title p {
+        margin-top: 22px;
+        font-size: 13px;
+    }
+
+    .bank-details-title{
+        width: 100%;
+    }
+
+    .bank-details-info{
+        width: 100%;
+    }
+
+    .bank-details-title p{
+        margin-top: 10px;
+        margin-bottom: 28px;
+        
+    }
+
+    .upload-button{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .upload-para{
+        margin-right: 0;
+    }
+
+    .btn-upload {
+        padding: 6px 7px;
+        margin-top: 10px;
+    }
+
+    .upload-button input[type=file] {
+        width: 0px;
+        opacity: 0;    
+        left: -106px;
+        top: 0px;
+        position: relative;
+    }
+
+    #button-box{
+        text-align: center !important;
+    }
+
+    #cont-btn{
+        padding: 5px 0px !important;
+    }
+
+    #cont-btn a{
+        padding: 9px 9px !important;
+    }
+  }
+
+
+  @media only screen and (min-width:548px) and (max-width:767px){
+    .bank-details-title p{
+        font-size: 16px;
+    }
+
+    .bank-details-title{
+        width: 100%;
+    }
+
+    .bank-details-info{
+        width: 100%;
+    }
+
+    .bank-details-title p{
+        margin-top: 12px;
+        
+    }
+
+    .upload-button{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .upload-para{
+        margin-right: 0;
+    }
+
+    .btn-upload {
+        padding: 6px 7px;
+        margin-top: 10px;
+    }
+
+    .upload-button input[type=file] {
+        width: 0px;
+        opacity: 0;    
+        left: -106px;
+        top: 0px;
+        position: relative;
+    }
+
+    #button-box{
+        text-align: center !important;
+    }
+
+    #cont-btn{
+        padding: 5px 0px !important;
+    }
+
+    #cont-btn a{
+        padding: 9px 9px !important;
+    }
+  }
+
+  
+
+  @media only screen and (min-width:768px) and (max-width:991px){
+    
+    .bank-details-title p {
+        margin-bottom: 29px;
+        margin-top: 7px;
+        font-weight: 600;
+    }
+    
+    .upload-button input[type=file] {
+        width: 0px;
+        opacity: 0;    
+        left: -106px;
+        top: 0px;
+        position: relative;
+    }
+
+    .upload-para {
+        display: inline;
+        margin-right: 120px;
+    }
+}

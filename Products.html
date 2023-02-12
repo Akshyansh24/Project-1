@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bussy Products</title>
+    <!-- ============== bootStrap =============== -->
+    <link rel="stylesheet" href="./Build/Css/bootstrap4.css">
+    <link rel="stylesheet" href="./Build/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Build/Js/bootstrap.min.js">
+    <!-- ==================Font Awesome =========== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- ===============Default Css================== -->
+    <link rel="stylesheet" href="./Build/Css/index.css">
+    <link rel="stylesheet" href="./Build/Css/index-media-query.css">
+    <!-- ===================Owl Slider ================= -->
+    <link rel="stylesheet" href="./Build/Css/owl.carousel.css">
+    <link rel="stylesheet" href="./Build/Css/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- =============nav Bar======================== -->
+    <div class="section-nav navv">
+            <div class="container-fluid pl-4 pr-4">
+            <div class="nav-bar d-none d-xs-none d-sm-none">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo-box">
+                            <a href=""><img src="./Build/Images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="nav">
+                                <ul class="nav-ul">
+                                    <li class="nav-items"><a href="index.html" ><i class="fas fa-home"></i>Home</a></li>
+                                    <li class="nav-items"><a id="special_active" href="products.html"><i class="fas fa-box"></i>Product</a></li>
+                                    <li class="nav-items"><a href="Contact.html"><i class="fas fa-file-alt"></i>Contact Us</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- ============== Mobile-Nav========== -->
+            <div class="mobile-nav d-block d-xs-block d-sm-block">
+                    <div class="logo-mobile">
+                            <img id="Logo_mobile_img" src="./Build/Images/logo.png" alt="" srcset="">
+                    </div>
+                    <div class="nav-tongle">
+                            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                    <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul>
+                    <li class="side-nav-item" ><a href="Index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li class="side-nav-item" id="mobile-service"><a href="Products.html"><i class="fas fa-box"></i>PRODUCTS</a></li>
+                    <li class="side-nav-item"><a href="Contact.html"><i class="fas fa-phone"></i>CONTACT</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!-- =================== Banner Section =================== -->
+    <div class="section-banner">
+        <div class="container-fluid pl-0 pr-0">
+            <div class="banner-overlay">
+                <div class="banner-box">
+                    <h2>
+                                    Products
+                                </h2>
+                    <ul class="banner-ul">
+                        <li><a href="Index-2.html">Home</a></li>
+                        <li>Products</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =================== Products ================== -->
+    <div class="section-products">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="product-upper-box">
+                                            <div class="product-image">
+                                                <img src="./Build/Images/product-1.png" alt="" srcset="">
+                                            </div>
+                                            <div class="product-heading">
+                                                <span class="tagline">Essential PC protection</span>
+                                                <span><h3 class="product-company-name">FinWiz</h3></span>
+                                                <span><h1 class="product-type">AntiVirus</h1></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-customer-rating">
+                                            <p>Delivers essential antivirus for your PC</p>
+                                            <div class="rating-stars">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="features">
+                                            <div class="feature-text">
+                                                <div class="feature-text-icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </div>
+                                                <div class="feature-text-content">
+                                                    <span>Security</span>
+                                                    <p>Defends against viruses,
+                                                        <br> ransomware & more</p>
+                                                </div>
+                                            </div>
+                                            <div class="feature-check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="features">
+                                            <div class="feature-text">
+                                                <div class="feature-text-icon">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </div>
+                                                <div class="feature-text-content">
+                                                    <span>Performance</span>
+                                                    <p>Defends against viruses,
+                                                        <br> ransomware & more</p>
+                                                </div>
+                                            </div>
+                                            <div class="feature-check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="buy-box">
+                                            <a class="buy-now" href="Address.html">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <a class="Card-anchor" href="./Address.html">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-lock"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Security</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="buy-box-back">
+                                                <a class="buy-now-back" href="Address.html">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="product-upper-box">
+                                            <div class="product-image">
+                                                <img src="./Build/Images/product-1.png" alt="" srcset="">
+                                            </div>
+                                            <div class="product-heading">
+                                                <span class="tagline">Essential PC protection</span>
+                                                <span><h3 class="product-company-name">FinWiz</h3></span>
+                                                <span><h1 class="product-type">AntiVirus</h1></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-customer-rating">
+                                            <p>Delivers essential antivirus for your PC</p>
+                                            <div class="rating-stars">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="features">
+                                            <div class="feature-text">
+                                                <div class="feature-text-icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </div>
+                                                <div class="feature-text-content">
+                                                    <span>Security</span>
+                                                    <p>Defends against viruses,
+                                                        <br> ransomware & more</p>
+                                                </div>
+                                            </div>
+                                            <div class="feature-check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="features">
+                                            <div class="feature-text">
+                                                <div class="feature-text-icon">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </div>
+                                                <div class="feature-text-content">
+                                                    <span>Performance</span>
+                                                    <p>Defends against viruses,
+                                                        <br> ransomware & more</p>
+                                                </div>
+                                            </div>
+                                            <div class="feature-check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="buy-box">
+                                            <a class="buy-now" href="Address.html">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <a class="Card-anchor" href="./Address.html">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-lock"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Security</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="buy-box-back">
+                                                <a class="buy-now-back" href="Address.html">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="product-upper-box">
+                                            <div class="product-image">
+                                                <img src="./Build/Images/product-1.png" alt="" srcset="">
+                                            </div>
+                                            <div class="product-heading">
+                                                <span class="tagline">Essential PC protection</span>
+                                                <span><h3 class="product-company-name">FinWiz</h3></span>
+                                                <span><h1 class="product-type">AntiVirus</h1></span>
+                                            </div>
+                                        </div>
+                                        <div class="product-customer-rating">
+                                            <p>Delivers essential antivirus for your PC</p>
+                                            <div class="rating-stars">
+                                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="features">
+                                            <div class="feature-text">
+                                                <div class="feature-text-icon">
+                                                    <i class="fas fa-lock"></i>
+                                                </div>
+                                                <div class="feature-text-content">
+                                                    <span>Security</span>
+                                                    <p>Defends against viruses,
+                                                        <br> ransomware & more</p>
+                                                </div>
+                                            </div>
+                                            <div class="feature-check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="features">
+                                            <div class="feature-text">
+                                                <div class="feature-text-icon">
+                                                    <i class="fas fa-sync-alt"></i>
+                                                </div>
+                                                <div class="feature-text-content">
+                                                    <span>Performance</span>
+                                                    <p>Defends against viruses,
+                                                        <br> ransomware & more</p>
+                                                </div>
+                                            </div>
+                                            <div class="feature-check">
+                                                <i class="fas fa-check-circle"></i>
+                                            </div>
+                                        </div>
+                                        <div class="buy-box">
+                                            <a class="buy-now" href="Address.html">Buy Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <a class="Card-anchor" href="./Address.html">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-lock"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Security</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="features">
+                                                <div class="feature-text">
+                                                    <div class="feature-text-icon">
+                                                        <i class="fas fa-sync-alt"></i>
+                                                    </div>
+                                                    <div class="feature-text-content">
+                                                        <span>Performance</span>
+                                                        <p>Defends against viruses,
+                                                            <br> ransomware & more</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-check">
+                                                    <i class="fas fa-check-circle"></i>
+                                                </div>
+                                            </div>
+                                            <div class="buy-box-back">
+                                                <a class="buy-now-back" href="Address.html">Buy Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =================== Footer ================== -->
+<div class="section footer-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <img src="./Build/Images/logo.png" alt="">
+                    </div>
+                    <div class="footer-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ut illo consectetur vero sequi quaerat nisi placeat iure ipsam eos deserunt, fugit laborum voluptas ab excepturi officia cum. Quis, libero.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea similique eligendi repudiandae sunt at aut quia placeat, molestiae explicabo repellendus libero eveniet quisquam minus dicta consequatur officia rem dignissimos.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="link-heading">
+                        <h3>Links</h3>
+                    </div>
+                    <div class="links">
+                        <ul class="footer-ul">
+                            <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+                            <li><a id="special-active-footer" href=""><i class="fas fa-box"></i>Products</a></li>
+                            <li><a href=""><i class="fas fa-file-alt"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="address">
+                        <h3>Address</h3>
+                        <p>1/419 Kala Kuan <br>
+                        New York, Usa <br>
+                        fanwiz@gmail.com</p>
+                        <ul class="social-links-ul">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
+ </div>
+ <!-- ================Last Section========= -->
+ <div class="section-last">
+        <div class="container">
+                <div class="last-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="copyright">Copyright © 2018. All Rights Reserved.</h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="developers">Design & Developer - DIIT</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ </div>
+
+
+ <a href="#top-scroll" onclick="scrollToTop();return false" class="cd-top" id="myp"> <i class="fas fa-caret-up"></i></a>
+
+
+    <script src="./Build/Js/jq.js"></script>
+    <script src="./Build/Js/jquery.min.js"></script>
+    <script src="./Build/Js/jquery.slim.min.js"></script>
+    <script src="./Build/Js/owl.carousel.min.js"></script>
+    <script src="./Build/Js/popper.min.js"></script>
+    <script src="./Build/Js/slider.js"></script>
+    <script src="./Build/Js/index.js"></script>
+    
+</body>
+</html>

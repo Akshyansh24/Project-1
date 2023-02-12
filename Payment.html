@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <!-- ============== bootStrap =============== -->
+    <link rel="stylesheet" href="./Build/Css/bootstrap4.css">
+    <link rel="stylesheet" href="./Build/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Build/Js/bootstrap.min.js">
+    <!-- ==================Font Awesome =========== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- ===============Default Css================== -->
+    <link rel="stylesheet" href="./Build/Css/index.css">
+    <link rel="stylesheet" href="./Build/Css/index-media-query.css">
+    <!-- ===================Owl Slider ================= -->
+    <link rel="stylesheet" href="./Build/Css/owl.carousel.css">
+    <link rel="stylesheet" href="./Build/Css/owl.theme.default.min.css">
+</head>
+<body>
+    <!-- =============nav Bar======================== -->
+    <div class="section-nav navv">
+            <div class="container-fluid pl-4 pr-4">
+            <div class="nav-bar d-none d-xs-none d-sm-none">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="logo-box">
+                            <a href=""><img src="./Build/Images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="nav">
+                                <ul class="nav-ul">
+                                    <li class="nav-items"><a href="index.html" ><i class="fas fa-home"></i>Home</a></li>
+                                    <li class="nav-items"><a id="special_active" href="products.html"><i class="fas fa-box"></i>Product</a></li>
+                                    <li class="nav-items"><a href="Contact.html"><i class="fas fa-file-alt"></i>Contact Us</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- ============== Mobile-Nav========== -->
+            <div class="mobile-nav d-block d-xs-block d-sm-block">
+                    <div class="logo-mobile">
+                            <img id="Logo_mobile_img" src="./Build/Images/logo.png" alt="" srcset="">
+                    </div>
+                    <div class="nav-tongle">
+                            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                    <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul>
+                    <li class="side-nav-item" ><a href="Index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li class="side-nav-item" id="mobile-service"><a href="Products.html"><i class="fas fa-box"></i>PRODUCTS</a></li>
+                    <li class="side-nav-item"><a href="Contact.html"><i class="fas fa-phone"></i>CONTACT</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!-- =================== Banner Section =================== -->
+    <div class="section-banner">
+        <div class="container-fluid pl-0 pr-0">
+            <div class="banner-overlay">
+                <div class="banner-box">
+                    <h2>
+                               PAYMENT
+                            </h2>
+                    <ul class="banner-ul">
+                        <li><a href="Index-2.html">Home</a></li>
+                        <li>Payment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- =================== Payment ============================= -->
+<!--============== acoordation ==================  -->
+<div class="section cart-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 cart-accordion">
+                    <div class="cart-accordion">
+                        <div class="accordionWrapper">
+                            <div class="accordionItem close" id="Address">
+                                <h1 class="accordionItemHeading"> <span>1. </span>Address</h1>
+                                <div class="accordionItemContent">
+                                    <p>The selected address will be used both as your personal address (for invoice) and as your delivery address.</p>
+                                    <div class="form-group row">
+                                        <label class="col-md-3" for="">First Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="First Name" maxlength="32">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3" for="">Last Name</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="lastname" maxlength="32">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3" for="">Address</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" type="text" name="address" maxlength="128">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3" for="">State</label>
+                                        <div class="col-md-9">
+                                            <div id="selection">
+                                                <select class="form-control" id="listBox" onchange='selct_district(this.value)'></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3" for="">City</label>
+                                        <div class="col-md-9">
+                                            <div id="selection">
+                                                <select class="form-control" id='secondlist'></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3" for="">Zip-Code</label>
+                                        <div class="col-md-9">
+                                            <input class="form-control" id="zip-code" type="digit" name="zipcode" maxlength="12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3" for="">Phone</label>
+                                        <div class="col-md-9">
+                                            <span class="prefix">+91</span>
+                                            <input class="form-control" id="phone" type="digit" name="zipcode" maxlength="10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-9 offset-md-3">
+                                            <input class="" type="checkbox" checked>
+                                            <label for="">Use this address for invoice too</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-block">
+                                            <button class="continue-btn" type="button"><a class="continue-anchar" href="payment.html">Continue</a></button>
+                                            <a class="cancel" href="cart.html">Cancel</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordionItem open">
+                                    <h1 class="accordionItemHeading"> <span>2. </span>Payment</h1>
+                                    <div class="accordionItemContent">
+                                        <p>Transfer Payment In Bank Account</p>
+                                        <div class="bank-details">
+                                            <div class="bank-details-title">
+                                                <p>Account Number</p>
+                                                <p>Holder Name</p>
+                                                <p>Ifsc Code</p>
+                                            </div>
+                                            <div class="bank-details-info">
+                                                <p>***********2356</p>
+                                                <p>FinWiz</p>
+                                                <p>SBI234569</p>
+                                            </div>
+                                        </div>
+                                        <div class="upload-button">
+                                                <p class="upload-para">Upload Payment Reciept or Screenshot of Payment</p>
+                                                <button class="btn-upload">Upload a file</button>
+                                                <input type="file" name="myfile" />
+                                              </div>
+                                       
+                                        <div id="button-box" class="card-block">
+                                                <button id="cont-btn" class="continue-btn" type="button"><a class="continue-anchar" href="payment.html">Continue</a></button>
+                                                <a class="cancel" href="cart.html">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- ================== Cart - Summary -============== -->
+                <div class="col-md-4">
+                    <div class="cart-summary">
+                        <div class="cart-detail">
+                            <div class="card-block">
+                                <div class="cart-subtotal-products">
+                                    <span class="subtotal">1 item</span>
+                                    <span class="value">$79.86</span>
+                                </div>
+                                <div class="cart-subtotal-products">
+                                    <span class="subtotal">Shipping</span>
+                                    <span class="value">$1</span>
+                                </div>
+                            </div>
+                            <hr class="seperater">
+                            <div class="card-block">
+                                <div class="cart-subtotal-products">
+                                    <span class="subtotal">Total(tax excl.)</span>
+                                    <span class="value">$79.86</span>
+                                </div>
+                                <div class="cart-subtotal-products">
+                                    <span class="subtotal">Taxes</span>
+                                    <span class="value">$0.00</span>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================== Footer ================== -->
+    <div class="section footer-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-logo">
+                            <img src="./Build/Images/logo.png" alt="">
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum ut illo consectetur vero sequi quaerat nisi placeat iure ipsam eos deserunt, fugit laborum voluptas ab excepturi officia cum. Quis, libero.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea similique eligendi repudiandae sunt at aut quia placeat, molestiae explicabo repellendus libero eveniet quisquam minus dicta consequatur officia rem dignissimos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="link-heading">
+                            <h3>Links</h3>
+                        </div>
+                        <div class="links">
+                            <ul class="footer-ul">
+                                <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+                                <li><a id="special-active-footer" href=""><i class="fas fa-box"></i>Products</a></li>
+                                <li><a href=""><i class="fas fa-file-alt"></i>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="address">
+                            <h3>Address</h3>
+                            <p>1/419 Kala Kuan <br>
+                            New York, Usa <br>
+                            fanwiz@gmail.com</p>
+                            <ul class="social-links-ul">
+                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+     </div>
+     <!-- ================Last Section========= -->
+     <div class="section-last">
+            <div class="container">
+                    <div class="last-footer">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="copyright">Copyright © 2018. All Rights Reserved.</h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="developers">Design & Developer - DIIT</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+     </div>
+    
+    
+     <a href="#top-scroll" onclick="scrollToTop();return false" class="cd-top" id="myp"> <i class="fas fa-caret-up"></i></a>
+    
+    
+        <script src="./Build/Js/jq.js"></script>
+        <script src="./Build/Js/jquery.min.js"></script>
+        <script src="./Build/Js/jquery.slim.min.js"></script>
+        <script src="./Build/Js/owl.carousel.min.js"></script>
+        <script src="./Build/Js/popper.min.js"></script>
+        <script src="./Build/Js/slider.js"></script>
+        <script src="./Build/Js/index.js"></script>
+        
+    </body>
+    </html>
