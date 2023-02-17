@@ -70,6 +70,7 @@ else clearTimeout(timeOut);
 }
 
 // ========================== Side Nav 
+// Designed and Developed By Akshyansh Sharma
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "350px";
